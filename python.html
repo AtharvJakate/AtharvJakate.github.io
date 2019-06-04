@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>python</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+    .modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
+			*{
+				padding: 0px;
+				margin: 0px;
+
+
+			}
+			body {
+				background-image: url("image12.jpg");
+				background-size: cover;
+			}
+
+			header{
+		width: 100%;
+		height: 1350px;
+		
+		background-size:cover;
+
+	
+	}
+
+	.header_menu{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border:;
+		position: fixed;
+		background-color:black;
+		opacity: 0.7;
+
+	}
+
+	.logo{
+		width: %;
+		text-align:center ;
+	}
+	.logo h1 blink{
+		animation: blinker 2.5s linear infinite;
+		color:#fff;
+	}
+	@keyframes blinker{
+		50%{opacity: 0;}
+	}
+
+
+	.logo h1{
+		height:px;
+		text-transform: uppercase;
+		padding-left: 50px;
+		color: white;
+	}
+
+	.menu_list{
+		width: 80%;
+		text-align: right;
+		padding-right: 190px;
+
+	}
+
+	.menu_list li{
+		display: inline-block;
+		text-transform: uppercase;
+		list-style: none;
+		letter-spacing: 2px;
+		padding-left: 20px;
+	}
+
+	.menu_list li a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.menu_list li a:hover{
+		color: #FFD34E;
+	}
+
+	
+
+
+
+
+
+		.python h1{
+			text-align: center;
+			font-size: 50px;
+			color:#FFD34E;
+			background-color:; 
+			height: 50px;
+			width:80%;
+			margin-left: 10%;
+			padding: 20px;
+			background-image:url("pythoncode.jpg");
+			background-size: cover;
+			border: 1px red;
+			font-family: ;
+			opacity:0.7;
+		}
+
+		.python{
+
+			height:;
+			padding-top:65px;
+			background-color: ;
+			text-align: center;
+
+		}
+
+		.pythontopic li a{
+				font-size: 40px;
+				text-decoration: none;
+				margin-left: 150px;
+				padding: ;
+				}
+
+		.intro h1{
+			text-align: center;
+			font-size: 50px;
+			padding: 50px;
+			max-width: 100%;
+		}
+		
+		.intro{
+			background-color: #C5D5D3;
+
+		}
+
+		.int{
+			width: 75%;
+			margin-left: 15%;
+			font-size: 20px;
+			background-color: #fff;
+
+		}	
+
+		.int1{
+			margin-left: 50px;
+			margin-right: 50px;
+			padding: 50px;
+		}	
+		.table{
+			border-collapse: collapse;
+  			width: 100%;
+		}
+		#table td, #table th {
+  		border: 1px solid #ddd;
+  		padding: 8px;
+		}
+		#table tr:nth-child(even){background-color: #f2f2f2;}
+
+		#table tr:hover {background-color: #ddd;}
+		#table th {
+  		padding-top: 12px;
+ 		padding-bottom: 12px;
+  		text-align: left;
+  		background-color: #4CAF50;
+  		color: white;
+		}
+		#a1 {
+  background-color:#4682B4;/* Green */
+  border: none;
+  color: white;
+padding: 12px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+#a1:hover {background-color:#4169E1;
+}
+#a2 {
+  background-color: #4682B4;
+  border: none;
+  color: white;
+  padding: 12px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+#a2:hover {
+background-color:#4169E1;
+}
+#a3 {
+	background-color:#4682B4;
+  
+  border: none;
+  color:white;
+  padding: 12px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+border-radius: 8px;}
+#a3:hover {
+   background-color:#4169E1;
+}
+
+#link {color:white;
+font-size: 30px;}
+
+		
+
+
+
+	</style>
+</head>
+<body>
+		<header>
+		
+	<div class="header_menu">
+		<div class="logo">
+			<h1><blink>LET'S START STUDY</blink></h1>
+		</div>
+
+		<div class="menu_list">
+			<ul>
+				<li><a href="index.html"><font color="#FFD34E">home</font></a></li>
+				<li><a href="index.html">feature</a></li>
+				<li><a href="index.html ">topic</a></li>
+				<li><a href="index.html ">contact</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+<br><br>
+
+
+	<div class="python">
+		<h1>Python</h1><br><br><br><br>
+	<!--	<div class="pythontopic">-->
+			<ul>
+				
+			<li><a id="link">1. Introduction to python:</a><br>
+			<p><a href="PDF/PYTHON/PYTHON1.pdf"><button id="a1">Theory</button></a>&nbsp;&nbsp;
+			<a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">video</a>
+   
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EE2NuH9ToDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div></p>
+
+
+		</li>
+			<br><br>
+			<li><a id="link">2. Python Variables, Strings</a>
+			<br>
+			<p><a href="PDF/PYTHON/PYTHON2.pdf"><button id="a1">Theory</button></a>&nbsp;&nbsp;
+			<a href="#myModal2" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal2">video</a>
+   
+    <div id="myModal2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/PQu86k0Ag8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+			<!--<a href="H:\webproject\Documents\variables.py"><button id="a3">Code</button></a></p>-->
+	</li>			</li><br><br>
+			<li><a id="link">3. Loops</a><br>
+			<p><a href="PDF/PYTHON/PYTHON3.pdf"><button id="a1">Theory</button></a>&nbsp;&nbsp;
+			<a href="#myModal3" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal3">video</a>
+   
+    <div id="myModal3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/7ju-VCScD7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+			<!--<a href="H:\webproject\Documents\loops.py"><button id="a3">Code</button></a>-->
+			</li><br><br>
+			<li><a id="link">4. Decision making statements</a>
+			<br>
+			<p><a href="PDF/PYTHON/PYTHON4.pdf"><button id="a1">Theory</button></a>&nbsp;&nbsp;
+		<a href="#myModal4" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal4">video</a>
+   
+    <div id="myModal4" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/gu8Qf6jMdJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+			<!--<a href="H:\webproject\Documents\decisionmaking.py"><button id="a3">Code</button></a>--></li><br><br>
+			<li><a id="link">5. Functions in python</a>
+			<br>
+			<p><a href="PDF/PYTHON/PYTHON5.pdf"><button id="a1">Theory</button></a>&nbsp;&nbsp;
+			<a href="#myModal5" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal5">video</a>
+   
+    <div id="myModal5" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8EfEpe2GsEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+
+			<!--<a href="H:\webproject\Documents\function.py"><button id="a3">Code</button></a>--></li><br><br>
+			<li><a id="link">6.  Simple calculator program</a>
+			<br>
+			<p><a href="PDF/PYTHON/PYTHON6.pdf"><button id="a1">Theory</button></a>&nbsp;&nbsp;
+		<a href="#myModal6" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal6">video</a>
+   
+    <div id="myModal6" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/h0NyfUESC3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div></p>
+
+
+			<!--<a href="H:\webproject\Documents\simplecalculator.py"><button id="a3">Code</button></a>--></li><br><br>
+			<li><a id="link">7.Python advantages and disadvantages</a>
+			<br>
+			<a href="PDF/PYTHON/PYTHON7.pdf"><button id="a1">Theory</button></a>
+			<!--<a href="H:\webproject\videopython.html"><button id="a2">Video</button></a>
+				-->
+			</ul>
+		</div>
+	</div>
+</li>
+</ul></div></header></body>
+<script type="text/javascript">
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+});
+
+$(document).ready(function(){
+    $('.modal').each(function(){
+            var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function(){
+
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
+});
+</script></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+		<div class="intro">
+			<h1 id="001">Introduction to python</h1>
+
+			<div class="int">
+
+			<div class="int1" >
+
+	<p><font color="red">Python</font> is a widely used general-purpose, high level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis on code readability, and its syntax allows programmers to express concepts in fewer lines of code.</p><br>
+	
+	<p>Python is a programming language that lets you work quickly and integrate systems more efficiently.</p><br>
+
+	<p>There are two major Python versions- <b>Python 2 and Python 3</b>. Both are quite different.</p><br><br>
+
+	<b>Beginning with Python programming:</b><br><br>
+
+	<b>1) Finding an Interpreter:</b><br><br>
+
+	<P>Before we start Python programming, we need to have an interpreter to interpret and run our programs. There are certain online interpreters .</P><br>
+
+	<p>Windows:There are many interpreters available freely to run Python scripts like IDLE ( Integrated Development Environment ) which is installed when you install the python software from <font color="red">http://python.org/</font></p><br>
+
+	<p>Linux:For Linux, Python comes bundled with the linux.</p><br><br>
+
+
+
+
+                <u><b><h1>Keywords</h1></b></u><br><br>
+
+
+
+<b>print</b><br>
+print to console<br><br>
+<b>while</b><br>
+controlling the flow of the program<br><br>
+<b>for</b><br>
+iterate over items of a collection in order that they appear<br><br>
+<b>break</b><br>
+interrupt the (loop) cycle, if needed<br><br><br>
+<b>continue</b><br>
+used to interrupt the current cycle, without jumping out of the whole cycle. 
+New cycle will begin.<br><br>
+<b>if</b><br>
+used to determine, which statements are going to be executed.<br><br>
+<b>elif</b><br>
+stands for else if.If the first test evaluates to False,
+then it continues with the next one<br><br>
+<b>else</b><br>
+is optional. The statement after the else keyword is executed, 
+unless the condition is True<br><br>
+<b>is</b><br>
+tests for object identity<br><br>
+<b>not</b><br>
+negates a boolean value<br><br>
+<b>and</b><br>
+all conditions in a boolean expression must be met<br><br>
+<b>or</b><br>
+at least one condition must be met.<br><br>
+<b>import</b><br>
+import other modules into a Python script<br><br>
+<b>as</b><br>
+if we want to give a module a different alias<br><br>
+<b>from</b><br>
+for importing a specific variable, class or a function from a module<br><br>
+<b>def</b><br>
+used to create a new user defined function<br><br>
+<b>return</b><br>
+exits the function and returns a value<br><br>
+<b>lambda</b><br>
+creates a new anonymous function<br><br>
+<b>global</b><br>
+access variables defined outside functions<br><br>
+<b>try</b><br>
+specifies exception handlers<br><br> 
+<b>except</b><br>
+catches the exception and executes codes<br><br>
+<b>finally</b><br>
+is always executed in the end. Used to clean up resources.<br><br>
+<b>raise</b><br>
+create a user defined exception<br><br>
+<b>del</b><br>
+deletes objects<br><br>
+<b>pass</b><br>
+does nothing<br><br>
+<b>assert</b><br>
+used for debugging purposes<br><br>
+<b>class</b><br>
+used to create new user defined objects<br><br>
+<b>exec</b><br>
+executes Python code dynamically<br><br>
+<b>yield</b><br>
+is used with generators<br><br><br><br>
+</div>
+</div>
+
+<hr>
+<div class="intro"><h1>Python Variables, Strings</h1></div><br><br>
+<div class="int">
+	<div class="int1">
+<h2>Python Variables: Declare, Concatenate, Global & Local</h2>
+<br><br>
+<h4>What is a Variable in Python?</h4>
+<p>A Python variable is a reserved memory location to store values. In other words, a variable in a python program gives data to the computer for processing.</p>
+<br>
+<p>Every value in Python has a datatype. Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc. Variables can be declared by any name or even alphabets like a, aa, abc, etc.
+</p>
+<br><br>
+<h4>How to Declare and use a Variable?</h4>
+<p>Let see an example. We will declare variable "a" and print it.</p>
+<br>
+<p>
+a=100 
+<br>
+print a
+</p>
+<br>
+<h4>Re-declare a Variable</h4>
+<br>
+<p>You can re-declare the variable even after you have declared it once.
+<br>
+Here we have variable initialized to f=0.<br>
+Later, we re-assign the variable f to value "guru99"
+</p>
+<br>
+<u>Python 2 Example</u>
+<br>
+<p># Declare a variable and initialize it<br>
+f = 0<br>
+print f<br>
+# re-declaring the variable works<br>
+f = 'guru99'<br>
+print f<br>
+</p>
+<br>
+<h4>Concatenate Variables</h4>
+<br>
+<p>Let's see whether you can concatenate different data types like string and number together. For example, we will concatenate "Guru" with the number "99".<br><br>
+Unlike Java, which concatenates number with string without declaring number as string, Python requires declaring the number as string otherwise it will show a TypeError<br><br>
+For the following code, you will get undefined output -<br>
+a="Guru"<br>
+b = 99<br>
+print a+b<br><br>
+Once the integer is declared as string, it can concatenate both "Guru" + str("99")= "Guru99" in the output.<br>
+a="Guru"<br>
+b = 99<br>
+print(a+str(b))<br>
+<br>
+<h4>Local & Global Variables</h4>
+<br>
+<p>In Python when you want to use the same variable for rest of your program or module you declare it a global variable, while if you want to use the variable in a specific function or method, you use a local variable.<br><br>
+Let's understand this difference between local and global variable with the below program.<br><br>
+1.	Variable "f" is global in scope and is assigned value 101 which is printed in output.<br>
+2.	Variable f is again declared in function and assumes local scope. It is assigned value "I am learning Python." which is printed out as an output. This variable is different from the global variable "f" define earlier.<br>
+3.	Once the function call is over, the local variable f is destroyed. At line 12, when we again, print the value of "f" is it displays the value of global variable f=101.<br></p>
+<br>
+<u>Python 2 Example</u><br>
+<br>
+<p># Declare a variable and initialize it<br>
+f = 101<br>
+print f<br>
+# Global vs. local variables in functions<br>
+def someFunction():<br>
+# global f<br>
+    f = 'I am learning Python'<br>
+    print f<br>
+someFunction()<br>
+print f<br><br>
+<p>Using the keyword global, you can reference the global variable inside a function.<br><br>
+1.	Variable "f" is global in scope and is assigned value 101 which is printed in output.<br>
+2.	Variable f is declared using the keyword global. This is NOT a local variable, but the same global variable declared earlier. Hence when we print its value, the output is 101<br>
+3. We changed the value of "f" inside the function. Once the function call is over, the changed value of the variable "f" persists. At line 12, when we again, print the value of "f" is it displays the value "changing global variable"<br>
+</p>
+<br>
+<u>Python 2 Example</u>
+<br><br>
+<p>f = 101;<br>
+print f<br>
+# Global vs.local variables in functions<br>
+def someFunction():<br>
+  global f<br>
+print f<br>
+f = "changing global variable"<br>
+someFunction()<br>
+print f <br><br>
+</p>
+<h4>Delete a variable</h4>
+<br>
+<p>You can also delete variable using the command del "variable name".<br>
+f = 11;<br>
+print(f)<br>
+del f<br>
+print(f)<br><br>
+</p>
+<h4>Python Strings: Replace, Join, Split, Reverse, Uppercase & Lowercase</h4>
+<br>
+<p>In Python everything is object and string are an object too. Python string can be created simply by enclosing characters in the double quote.<br><br>
+For example:<br>
+var = "Hello World!"<br>
+</p><br>
+<h4>Accessing Values in Strings</h4><br>
+<p><span style="color: green">Python does not support a character type</span>, these are treated as strings of length one, also considered as substring.<br><br>
+We use square brackets for slicing along with the index or indices to obtain a substring.<br><br>
+var1 = "Guru99!"<br>
+var2 = "Software Testing"<br>
+print ("var1[0]:",var1[0])<br>
+print ("var2[1:5]:",var2[1:5])<br><br>
+<h4>Various String Operators</h4>
+<br>
+<p>There are various string operators that can be used in different ways like concatenating different string.<br><br>
+Suppose if a=guru and b=99 then a+b= "guru99". Similarly, if you are using a*2, it will "GuruGuru". Likewise, you can use other operators in string.
+</p><br><br>
+	<table id="table">
+		<tr>
+			<th>operator</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>[]</td>
+			<td>Slice- it gives the letter from the given index</td>
+			<td>a[1] will give "u" from the word Guru as such ( 0=G, 1=u, 2=r and 3=u) x="Guru"print x[1]</td>
+		</tr>
+		<tr>
+		    <td>[ : ]</td>
+		    <td>Range slice-it gives the characters from the given range</td>
+		    <td>x [1:3] it will give "ur" from the word Guru. Remember it will not consider 0 which is G, it will consider word after that is ur.<br>x="Guru" print x[1:3]</td>
+		</tr>
+		<tr>
+			<td>in</td>
+			<td>Membership-returns true if a letter exist in the given string</td>
+			<td>u is present in word Guru and hence it will give 1 (True)<br>x="Guru" print "u" in x</td>
+		</tr>
+		<tr>
+			<td>not in</td>
+			<td>Membership-returns true if a letter exist is not in the given string</td>
+			<td>l not present in word Guru and hence it will give 1	<br> x="Guru" print "l" not in x</td>
+		</tr>
+		<tr>
+			<td>r/R</td>
+			<td>Raw string suppresses actual meaning of escape characters</td>
+			<td>Print r'\n' prints \n and print R'/n' prints \n</td>
+		</tr>
+		<tr>
+			<td>% - Used for string format</td>
+			<td>%r -It insert the canonical string representation of the object<br> (i.e., repr(o)) %s-It insert the presentation string representation of the object (i.e., str(o)) %d- it will format a number for display</td>
+			<td>The output of this code will be "guru 99".<br>name = 'guru'number = 99<br>print'%s %d' % (name,number)	</td>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td>It concatenates 2 strings</td>
+			<td>It concatenate strings and gives the result	x="Guru" <br>y="99" <br>print x+y</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>repeat</td>
+			<td>It prints the character twice.	x="Guru" <br>y="99" <br>print x*2</td>
+		</tr>
+	</table>
+</p><br>
+<h4>Some more examples</h4>
+<br>
+<p>You can update Python String by re-assigning a variable to another string. The new value can be related to previous value or to a completely different string all together.<br><br>
+x = "Hello World!"<br>
+print(x[:6])<br>
+print(x[0:6] + "Guru99")<br>
+Note : - Slice:6 or 0:6 has the same effect<br>
+</p>
+<br><h4>Python String replace() Method</h4>
+<br>
+<p>The method replace() returns a copy of the string in which the values of old string have been replaced with the new value.<br><br>
+oldstring = 'I like Guru99'<br> 
+newstring = oldstring.replace('like', 'love')<br>
+print(newstring)<br>
+</p>
+<br>
+<h4>Changing upper and lower case strings</h4>
+<br>
+<p>In Python, you can even change the string to upper case or lower case.<br><br>
+string="python at guru99"<br>
+print(string.upper())<br><br>
+Likewise, you can also do for other function as well like capitalize<br><br>
+string="python at guru99"<br>		
+print(string.capitalize())<br><br>
+You can also convert your string to lower case<br><br>
+string="PYTHON AT GURU99"<br>
+print(string.lower())<br>
+</p>
+<br><h4>Using "join" function for the string</h4>
+<br>
+<p>The join function is a more flexible way for concatenating string. With join function, you can add any character into the string.<br><br>
+For example, if you want to add a colon (:) after every character in the string "Python" you can use the following code.<br><br>
+print(":".join("Python"))<br>
+</p>
+<br><h4>Reversing String</h4>
+<br>
+<p>By using the reverse function, you can reverse the string. For example, if we have string "12345" and then if you apply the code for the reverse function as shown below.<br><br>
+string="12345"<br>
+print(''.join(reversed(string)))<br>
+</p>
+<br><h4>Split Strings</h4>
+<br>
+<p>Split strings is another function that can be applied in Python let see for string "guru99 career guru99". First here we will split the string by using the command word.split and get the result.<br><br>
+word="guru99 career guru99"<br>	
+print(word.split(' '))<br><br>
+To understand this better we will see one more example of split, instead of space (' ') we will replace it with ('r') and it will split the string wherever 'r' is mentioned in the string<br><br>
+word="guru99 career guru99"<br>
+print(word.split('r'))<br>
+</p>
+<br>
+<h4>Important Note:<br><br>
+In Python, Strings are immutable.<br><br>
+Consider the following code<br></h4>
+<br>
+<p>x = "Guru99"<br>
+x.replace("Guru99","Python")<br>
+print(x)<br><br>
+will still return Guru99. This is because x.replace("Guru99","Python") returns <span style="color:green">a copy of X with replacements made</span><br><br>
+<u>You will need to use the following code to observe changes</u><br><br>
+x = "Guru99"<br>
+x = x.replace("Guru99","Python")<br>
+print(x)<br><br>
+Above codes are Python 3 examples, If you want to run in Python 2 please consider following code.<br>
+</p><br>
+<u>Python 2 Example</u><br><br>
+
+#Accessing Values in Strings<br><br>
+var1 = "Guru99!"<br>
+var2 = "Software Testing"<br>
+print "var1[0]:",var1[0]<br>
+print "var2[1:5]:",var2[1:5]<br>
+#Some more examples<br>
+x = "Hello World!"<br>
+print x[:6] <br>
+print x[0:6] + "Guru99"<br>
+#Python String replace() Method<br>
+oldstring = 'I like Guru99' <br>
+newstring = oldstring.replace('like', 'love')<br>
+print newstring<br>
+#Changing upper and lower case strings<br>
+string="python at guru99"<br>
+print string.upper()<br>
+string="python at guru99"<br>		
+print string.capitalize()<br>
+string="PYTHON AT GURU99"<br>
+*-+print string.lower()<br>
+#Using "join" function for the string<br>
+print":".join("Python")<br>
+#Reversing String<br>
+string="12345"<br>
+print''.join(reversed(string))<br>
+#Split Strings<br>
+word="guru99 career guru99"<br>		
+print word.split(' ')<br>
+word="guru99 career guru99"<br>		
+print word.split('r')<br>
+x = "Guru99"<br>
+x.replace("Guru99","Python")<br>
+print x<br>
+x = "Guru99"<br>
+x = x.replace("Guru99","Python")<br>
+print x<br><br>
+Python has introduced a .format function which does way with using the cumbersome %d and so on for string formatting.<br>
+</p>
+<br>
+<h2>code</h2><br>
+#! /usr/bin/python<br>
+print 'Content-type: text/html'<br>
+print ''<br>
+age = 35<br>
+print age<br>
+pi = 3.14<br>
+p rint pi<br>
+name = "Ram"<br>
+print name<br>
+print age / pi<br>
+number = "5"<br>
+print float(number) * pi<br>
+str = "My Name Is "<br>
+print str[0]<br>
+print str[0:5]<br>
+print str[5]<br>
+print str + name<br>
+myList = ["Steve","Natasha","Tony","Nick"]<br>
+print myList<br>
+print myList[1]<br>
+print myList[2:4]<br>
+myTuple = (1, 2, 3, 4)<br>
+print myTuple<br>
+print myTuple[2]<br>
+myList[2] = 5<br>
+print myList<br>
+dict = {}<br>
+dict["principal"] = "romanoff"<br>
+dict["student"] = "barton"<br>
+dict[1] = "Tommy"<br>
+dict[2] = "Ralphie"<br>
+print dict<br>
+print dict["student"]<br>
+print dict.keys()<br>
+print dict.values()<br>
+
+
+</div>
+</div>
+
+
+<div class="intro"><h1>Loops</h1></div><br>
+<div class="int">
+	<div class="int1">
+<p>In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.<br><br>
+Programming languages provide various control structures that allow for more complicated execution paths.<br><br>
+A loop statement allows us to execute a statement or group of statements multiple times. The following diagram illustrates a loop statement −<br><br></p>
+<p>
+<br>
+<div style="text-align: center;"><img src="1.png"></div>
+<br>
+Python programming language provides following types of loops to handle looping requirements.<br><br><br>
+<table id="table">
+	<tr>
+		<th>Sr.No</th>
+		<th>Loop type and description</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>while loop<br>
+		Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</td>
+	</tr>
+	<tr>
+*		<td>2</td>
+		<td>for loop<br>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>nested loops<br>You can use one or more loop inside any another while, for or do..while loop.</td>
+	</tr>
+</table>
+<br>
+<u>Loop Control Statements</u><br><br>
+Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.<br><br>
+Python supports the following control statements. Click the following links to check their detail.<br><br>
+Let us go through the loop control statements briefly<br>
+<br>
+<table id="table">
+	<tr>
+		<th>Sr.No</th>
+		<th>Control Description and statements</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>break statement<br>Terminates the loop statement and transfers execution to the statement immediately following the loop.</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>continue statement<br>Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>pass statement<br>The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.</td>
+	</tr>
+</table>
+<br>
+<h2>code</h2><br><br>
+#! /usr/bin/python<br>
+print 'Content-type: text/html'<br>
+print ''<br>
+for i in range(5, 11):<br>
+    print i<br>
+print "Xyz"<br>
+favouriteFoods = ["Pizza", "Chocolate", "Ice Cream"]<br>
+for food in favouriteFoods:<br>
+    print "I like eating " + food + "."<br>
+x = 0<br>
+while x <= 10:<br>
+    print x<br>
+    x += 1<br><br>
+# Dictionary - 4 names (key) and ages (value) of people<br>
+# Loop which prints. eg. Sam is 7<br>
+ages = {}<br>
+ages["Rob"] = 35<br>
+ages["Kirsten"] = 36<br>
+ages["Tommy"] = 5<br>
+ages["Ralphie"] = 1<br>
+for age in ages:<br>
+    print age + " is " + str(ages[age])<br>
+<br>
+
+</div>
+</div>
+
+
+<div class="intro">
+	<h1>Decision making statements</h1></div>
+	<div class="int">
+		<div class="int1">
+<br>
+<p>Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions.<br><br>
+Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.<br><br>
+Following is the general form of a typical decision making structure found in most of the programming languages −<br><br>
+<div style="text-align: center;"><img src="download.jpg"></div>
+<br>
+</p>
+<p>Python programming language assumes any non-zero and non-null values as TRUE, and if it is either zero or null, then it is assumed as FALSE value.
+Python programming language provides following types of decision making statements. Click the following links to check their detail.<br></p>
+<br>
+<br>
+<table id="table">
+	<tr>
+		<th>Sr.No</th>
+		<th>Statement and description</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>if statements<br>An if statement consists of a boolean expression followed by one or more statements.</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>if...else statements<br>An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE.</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>nested if statements<br>You can use one if or else if statement inside another if or else ifstatement(s).</td>
+	</tr>
+</table><br>
+<h2>code</h2><br>
+#! /usr/bin/python<br>
+print 'Content-type: text/html'<br>
+print ''<br>
+name = "David"<br>
+if name == "David" or name == "Chris" :<br>
+    print "Hello " + name<br>
+else:<br>
+    print "I don't know you"<br><br>
+# Create a program which displays the first 50 prime numbers 2, 3, 5, 7, 11...<br><br>
+numberOfPrimes = 0<br>
+number = 2<br>
+while numberOfPrimes < 50:<br>
+    isPrime = True<br>
+    for i in range(2, number):<br>
+        if number % i == 0:<br>
+            isPrime = False<br>
+    if isPrime == True:<br>
+        print number<br>
+        numberOfPrimes += 1<br>
+    number += 1<br><br>
+
+</div>
+</div>
+
+<br>
+<div class="intro"><h1>Function in Python</h1></div>
+<div class="int">
+	<div class="int1">
+<br>
+<p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.<br><br>
+As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.<br><br>
+</p>
+<h4>Defining a Function</h4><br>
+You can define functions to provide the required functionality. Here are simple rules to define a function in Python.<br><br>
+Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).<br><br>
+Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.<br><br>
+The first statement of a function can be an optional statement - the documentation string of the function or docstring.<br><br>
+The code block within every function starts with a colon (:) and is indented.<br><br>
+The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.<br><br>
+<u>Syntax</u><br><br>
+def functionname( parameters ):<br>
+   "function_docstring"<br>
+   function_suite<br>
+   return [expression]<br><br>
+By default, parameters have a positional behavior and you need to inform them in the same order that they were defined.<br><br>
+<u>Example</u><br><br>
+The following function takes a string as input parameter and prints it on standard screen.<br><br>
+def printme( str ):<br>
+   "This prints a passed string into this function"<br>
+   print str<br>
+   return<br><br>
+  <h4>Calling a Function</h4><br><br>
+Defining a function only gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code.<br><br>
+Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt. Following is the example to call printme() function −<br><br>
+#!/usr/bin/python<br>
+# Function definition is heredef printme( str ):<br>
+   "This prints a passed string into this function"<br>
+   print str<br>
+   return;<br>
+# Now you can call printme function<br>
+printme("I'm first call to user defined function!")<br>
+printme("Again second call to the same function")<br><br>
+When the above code is executed, it produces the following result −<br><br>
+I'm first call to user defined function!<br>
+Again second call to the same function<br><br>
+<h4>Pass by reference vs value</h4><br>
+All parameters (arguments) in the Python language are passed by reference. It means if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example −<br><br>
+#!/usr/bin/python<br>
+# Function definition is heredef changeme( mylist ):<br>
+   "This changes a passed list into this function"<br>
+   mylist.append([1,2,3,4]);<br>
+   print "Values inside the function: ", mylist<br>
+   return<br>
+# Now you can call changeme function<br>
+mylist = [10,20,30];<br>
+changeme( mylist );print "Values outside the function: ", mylist<br><br>
+Here, we are maintaining reference of the passed object and appending values in the same object. So, this would produce the following result −<br><br>
+Values inside the function:  [10, 20, 30, [1, 2, 3, 4]]<br>
+Values outside the function:  [10, 20, 30, [1, 2, 3, 4]]<br><br>
+There is one more example where argument is being passed by reference and the reference is being overwritten inside the called function.<br><br>
+#!/usr/bin/python<br>
+# Function definition is heredef changeme( mylist ):<br>
+   "This changes a passed list into this function"<br>
+   mylist = [1,2,3,4]; # This would assig new reference in mylist<br>
+   print "Values inside the function: ", mylist<br>
+   return<br><br>
+   # Now you can call changeme function<br>
+mylist = [10,20,30];<br>
+changeme( mylist );print "Values outside the function: ", mylist<br>
+The parameter mylist is local to the function changeme. Changing mylist within the function does not affect mylist. The function accomplishes nothing and finally this would produce the following result −<br><br>
+Values inside the function:  [1, 2, 3, 4]<br>
+Values outside the function:  [10, 20, 30]<br><br>
+<h4>Function Arguments</h4><br>
+You can call a function by using the following types of formal arguments −<br><br>
+•	Required arguments<br>
+•	Keyword arguments<br>
+•	Default arguments<br>
+•	Variable-length arguments<br><br>
+<h4>Required arguments</h4><br>
+Required arguments are the arguments passed to a function in correct positional order. Here, the number of arguments in the function call should match exactly with the function definition.<br><br>
+To call the function printme(), you definitely need to pass one argument, otherwise it gives a syntax error as follows−<br><br>
+
+#!/usr/bin/python<br>
+# Function definition is heredef printme( str ):<br>
+   "This prints a passed string into this function"<br>
+   print str<br>
+   return;<br>
+# Now you can call printme function<br>
+printme()<br><br>
+When the above code is executed, it produces the following result −<br><br>
+Traceback (most recent call last):<br>
+   File "test.py", line 11, in <module><br>
+      printme();<br>
+      TypeError: printme() takes exactly 1 argument (0 given)<br><br>
+      <h4>Keyword Arguments</h4><br><br>
+
+      Keyword arguments are related to the function calls. When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.<br><br>
+This allows you to skip arguments or place them out of order because the Python interpreter is able to use the keywords provided to match the values with parameters. You can also make keyword calls to the printme() function in the following ways −<br><br>
+
+#!/usr/bin/python<br>
+# Function definition is heredef printme( str ):<br>
+   "This prints a passed string into this function"<br>
+   print str<br>
+   return;<br>
+# Now you can call printme function<br>
+printme( str = "My string")<br><br>
+When the above code is executed, it produces the following result −<br><br>
+My string<br>
+The following example gives more clear picture. Note that the order of parameters does not matter.<br><br>
+
+#!/usr/bin/python<br>
+# Function definition is heredef printinfo( name, age ):<br>
+   "This prints a passed info into this function"<br>
+   print "Name: ", name<br>
+   print "Age ", age<br>
+   return;<br>
+# Now you can call printinfo function<br>
+printinfo( age=50, name="miki" )<br><br>
+When the above code is executed, it produces the following result −<br><br>
+Name:  miki<br>
+Age  50<br><br>
+<h4>Default arguments</h4><br><br>
+A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument. The following example gives an idea on default arguments, it prints default age if it is not passed −<br><br>
+
+#!/usr/bin/python<br>
+# Function definition is heredef printinfo( name, age = 35 ):<br>
+   "This prints a passed info into this function"<br>
+   print "Name: ", name<br>
+   print "Age ", age<br>
+   return;<br><br>
+# Now you can call printinfo function<br>
+printinfo( age=50, name="miki" )<br>
+printinfo( name="miki" )<br><br>
+When the above code is executed, it produces the following result −<br><br>
+Name:  miki<br>
+Age  50<br>
+Name:  miki<br>
+Age  35<br><br>
+<h4>Variable-length arguments</h4><br><br>
+You may need to process a function for more arguments than you specified while defining the function. These arguments are called variable-lengtharguments and are not named in the function definition, unlike required and default arguments.<br><br>
+Syntax for a function with non-keyword variable arguments is this −<br><br>
+def functionname([formal_args,] *var_args_tuple ):<br>
+   "function_docstring"<br>
+   function_suite<br>
+   return [expression]<br><br>
+An asterisk (*) is placed before the variable name that holds the values of all nonkeyword variable arguments. This tuple remains empty if no additional arguments are specified during the function call. Following is a simple example−<br><br>
+#!/usr/bin/python<br>
+# Function definition is heredef printinfo( arg1, *vartuple ):<br>
+   "This prints a variable passed arguments"<br>
+   print "Output is: "<br>
+   print arg1<br>
+   for var in vartuple:<br>
+      print var<br>
+   return;<br><br>
+# Now you can call printinfo function<br>
+printinfo( 10 )<br>
+printinfo( 70, 60, 50 )<br><br>
+When the above code is executed, it produces the following result −<br><br>
+Output is:<br>
+10<br>
+Output is:<br>
+70<br>
+60<br>
+50<br><br>
+<h4>The Anonymous Functions</h4><br><br>
+These functions are called anonymous because they are not declared in the standard manner by using the def keyword. You can use the lambda keyword to create small anonymous functions.<br><br>
+Lambda forms can take any number of arguments but return just one value in the form of an expression. They cannot contain commands or multiple expressions.<br><br>	
+An anonymous function cannot be a direct call to print because lambda requires an expression<br><br>
+Lambda functions have their own local namespace and cannot access variables other than those in their parameter list and those in the global namespace.<br><br>
+Although it appears that lambda's are a one-line version of a function, they are not equivalent to inline statements in C or C++, whose purpose is by passing function stack allocation during invocation for performance reasons.<br><br>
+<h4>Syntax</h4><br><br>
+The syntax of lambda functions contains only a single statement, which is as follows −<br><br>
+lambda [arg1 [,arg2,.....argn]]:expression<br>
+Following is the example to show how lambda form of function works −<br><br>
+#!/usr/bin/python<br>
+# Function definition is here<br>
+sum = lambda arg1, arg2: arg1 + arg2;<br><br>
+# Now you can call sum as a functionprint "Value of total : ", sum( 10, 20 )print "Value of total : ", sum( 20, 20 )<br>
+When the above code is executed, it produces the following result −<br><br>
+Value of total :  30<br>
+Value of total :  40<br><br>
+<h4>The return Statement</h4><br><br>
+The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.<br><br>
+All the above examples are not returning any value. You can return a value from a function as follows −<br><br>
+
+#!/usr/bin/python<br>
+# Function definition is heredef sum( arg1, arg2 ):<br>
+   # Add both the parameters and return them."<br>
+   total = arg1 + arg2<br>
+   print "Inside the function : ", total<br>
+   return total;<br>
+# Now you can call sum function<br>
+total = sum( 10, 20 );print "Outside the function : ", total<br><br> 
+When the above code is executed, it produces the following result −<br><br>
+Inside the function :  30<br>
+Outside the function :  30<br><br>
+<h4>Scope of Variables</h4><br><br>
+All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.<br><br>
+The scope of a variable determines the portion of the program where you can access a particular identifier. There are two basic scopes of variables in Python −<br><br>
+•	Global variables<br>
+•	Local variables<br><br>
+Global vs. Local variables<br><br>
+Variables that are defined inside a function body have a local scope, and those defined outside have a global scope.<br><br>
+This means that local variables can be accessed only inside the function in which they are declared, whereas global variables can be accessed throughout the program body by all functions. When you call a function, the variables declared inside it are brought into scope. Following is a simple example −<br><br>
+#!/usr/bin/python<br>
+total = 0; # This is global variable.# Function definition is heredef sum( arg1, arg2 ):<br>
+   # Add both the parameters and return them."<br>
+      total = arg1 + arg2; # Here total is local variable.<br>
+   print "Inside the function local total : ", total<br>
+   return total;<br><br>
+# Now you can call sum function<br><br>
+sum( 10, 20 );print "Outside the function global total : ", total<br> 
+When the above code is executed, it produces the following result −<br><br>
+Inside the function local total :  30<br>
+Outside the function global total :  0<br>
+<br>
+<h2>code</h2><br>
+<p>#! /usr/bin/python<br>
+print 'Content-type: text/html'<br>
+print ''<br>
+def sayHello():<br>
+    print "Hello!"<br>
+sayHello()<br>
+def saySomething(something):<br>
+    print something<br>
+saySomething("Hi there!")<br>
+def multiplyTwoNumbers(x, y):<br>
+    return x * y<br>
+print multiplyTwoNumbers(4, 6)<br><br>
+# Create a function highestCommonFactor which returns the highest number that divides into two other numbers exactly<br><br>
+def highestCommonFactor(x, y):<br>
+    for i in range (1, x + 1):<br>
+        if x % i == 0 and y % i == 0:<br>
+            hcf = i<br>
+    return hcf<br>
+print highestCommonFactor(15, 10)<br>
+a = 5<br>
+b = 6<br>
+def addTwoNumbers():<br>
+    c = 8<br>
+    return a + b<br>
+print addTwoNumbers()<br>
+print c<br>
+
+
+
+</div>
+</div>
+<div class="intro"><h1>Simple Calculator Program</h1></div>
+<div class="int">
+	<div class="int1">
+		<p>Create a simple calculator which can perform basic arithmetic operations like addition, subtraction, multiplication or division depending upon the user input.<br><br>
+Approach :<br>
+•  User choose the desired operation. Options 1, 2, 3 and 4 are valid.<br>
+•  Two numbers are taken and an if…elif…else branching is used to execute a particular section.<br>
+•  Using functions add(), subtract(), multiply() and divide() evaluate respective operations.<br>
+
+<br><br>
+<u><h2>code</h2></u><br><br>
+<p># Python program for simple calculator<br><br><br>
+# Function to add two numbers<br>
+def add(num1, num2):<br>
+	return num1 + num2 <br>
+# Function to subtract two numbers<br> 
+def subtract(num1, num2):<br>
+	return num1 - num2 <br>
+# Function to multiply two numbers<br> 
+def multiply(num1, num2):<br> 
+	return num1 * num2<br>
+# Function to divide two numbers<br> 
+def divide(num1, num2):<br>
+	return num1 / num2 <br>
+print("Please select operation -\n" \<br> 
+		"1. Add\n" \ <br>
+		"2. Subtract\n" \<br> 
+		"3. Multiply\n" \ <br>
+		"4. Divide\n")<br> 
+# Take input from the user<br>
+select = input("Select operations form 1, 2, 3, 4 :")<br> 
+number_1 = int(input("Enter first number: ")) <br>
+number_2 = int(input("Enter second number: ")) <br>
+if select == '1': <br>
+	print(number_1, "+", number_2, "=",<br> 
+					add(number_1, number_2))<br> 
+elif select == '2':<br> 
+	print(number_1, "-", number_2, "=",<br> 
+					subtract(number_1, number_2))<br> 
+elif select == '3':<br> 
+	print(number_1, "*", number_2, "=",<br> 
+					multiply(number_1, number_2))<br> 
+elif select == '4':<br> 
+	print(number_1, "/", number_2, "=",<br> 
+					divide(number_1, number_2))<br> 
+else:<br>
+	print("Invalid input")<br> 
+</p>
+</div>
+</div>
+
+<div class="intro">
+	<h1>Advantages and Disadvantages</h1></div>
+	<div class="int">
+		<div class="int1">
+Python is a high level, interpreted and general purpose dynamic programming language that focuses on code readability.It has fewer steps when compared to Java and C.It was founded in 1991 by developer Guido Van Rossum.It is used in many organizations as it supports multiple programming paradigms.It also performs automatic memory management.<br><br>
+Advantages :<br><br>
+1) Presence of third-party modules<br>
+2) Extensive support libraries(NumPy for numerical calculations, Pandas for data analytics etc)<br>
+3) Open source and community development<br>
+4) Easy to learn<br>
+5) User-friendly data structures<br>
+6) High-level language<br>
+7) Dynamically typed language(No need to mention data type based on value assigned, it takes data type)<br>
+8) Object-oriented language<br>
+9) Portable and Interactive<br>
+10) Portable across Operating systems<br><br>
+Applications :<br><br>
+1) GUI based desktop applications(Games, Scientific Applications)<br>
+2) Web frameworks and applications<br>
+3) Enterprise and Business applications<br>
+4) Operating Systems<br>
+5) Language Development<br>
+6) Prototyping<br>
+</div>
+</div>
+<br>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+		<div class="video">
+			<video></video>
+		</div>
+
+		
+			</div>
+				
+			</div>
+		</div>
+
+
+
+</body>
+</html>

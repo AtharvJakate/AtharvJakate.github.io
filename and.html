@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Android</title>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+    	margin: 10px;
+    }
+    .modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
+
+			*{
+				padding: 0px;
+				margin: 0px;
+
+
+			}
+					body 
+				{background-image: url("image6.jpg");
+				background-size: cover;}
+			
+
+
+			header{
+		width: 100%;
+		height: 1400px;
+		
+		background-size:cover;
+
+	
+	}
+
+	.header_menu{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border:;
+		position: fixed;
+		background-color:black;
+		opacity: 0.7;
+
+	}
+
+	.logo{
+		width: %;
+		text-align:center ;
+	}
+	.logo h1 blink{
+		animation: blinker 2.5s linear infinite;
+		color:#fff;
+	}
+	@keyframes blinker{
+		50%{opacity: 0;}
+	}
+
+
+	.logo h1{
+		height:px;
+		text-transform: uppercase;
+		padding-left: 50px;
+		color: white;
+	}
+
+	.menu_list{
+		width: 80%;
+		text-align: right;
+		padding-right: 190px;
+
+	}
+
+	.menu_list li{
+		display: inline-block;
+		text-transform: uppercase;
+		list-style: none;
+		letter-spacing: 2px;
+		padding-left: 20px;
+	}
+
+	.menu_list li a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.menu_list li a:hover{
+		color: #FFD34E;
+	}
+
+
+		.js h1{
+			text-align: center;
+			color:#FFD34E;
+			background-color: ;
+			height: 50px;
+			width:80%;
+			margin-left: 10%;
+			padding: 20px;
+			opacity:0.7;
+		}
+
+		.js{
+
+			height: ;
+			padding-top: 65px;
+			background-color:;
+			text-align: center;
+
+		}
+
+		.jstopic li a{
+				font-size: 40px;
+				text-decoration: none;
+				margin-left: 150px;
+				padding: ;
+				}
+
+		.intro h1{
+			text-align: center;
+			font-size: 50px;
+			padding: 50px;
+			max-width: 100%;
+		}
+		
+		.intro{
+			background-color: #C5D5D3;
+
+		}
+
+		.int{
+			width: 75%;
+			margin-left: 15%;
+			font-size: 20px;
+			background-color: #fff;
+
+		}	
+
+		.int1{
+			margin-left: 50px;
+			margin-right: 50px;
+			padding: 50px;
+		}	
+		.table{
+			border-collapse: collapse;
+  			width: 100%;
+		}
+		#table td, #table th {
+  		border: 1px solid #ddd;
+  		padding: 8px;
+		}
+		#table tr:nth-child(even){background-color: #f2f2f2;}
+
+		#table tr:hover {background-color: #ddd;}
+		#table th {
+  		padding-top: 12px;
+ 		padding-bottom: 12px;
+  		text-align: left;
+  		background-color: #4CAF50;
+  		color: white;
+		}
+		#a4 {
+  background-color:#4682B4;/* Green */
+  border: none;
+  color: white;
+  padding: 12px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 6px;
+}
+#a4:hover {
+  background-color:#4169E1;
+}
+#a5 {
+  background-color:#4682B4; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 12px;
+}
+#a5:hover {
+ background-color:#4CAF50;
+}
+#a6 {
+  background-color:#4682B4;
+  border: none;
+  color:white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+border-radius: 12px;}
+#a6:hover {
+  background-color:#4CAF50;
+}
+
+#link {color:white;
+font-size: 30px;}
+
+video + button.close {
+  font-size: 10px;   
+  display: block;
+}
+video.hide {
+  display: none;
+}
+
+
+
+
+	</style>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+});
+
+$(document).ready(function(){
+    $('.modal').each(function(){
+            var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function(){
+
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
+});
+</script>
+
+
+
+
+
+
+</head>
+<body>
+		<header>
+		
+	<div class="header_menu">
+		<div class="logo">
+			<h1><blink>LET'S START STUDY</blink></h1>
+		</div>
+
+		<div class="menu_list">
+			<ul>
+				<li><a href="index.html"><font color="#FFD34E">home</font></a></li>
+				<li><a href="index.html ">feature</a></li>
+				<li><a href="index.html ">topic</a></li>
+				<li><a href="index.html ">contact</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+<br><br>
+
+
+	<div class="js">
+		<h1>Android</h1><br><br><br><br>
+		<!--<div class="jstopic">-->
+			<ul>
+				
+			<li><a id="link">The-Master-Detail-Flowchart:</a><br>
+			<p><a href="PDF/Android/android1.pdf"><button id="a4">Theory</button></a>
+			&nbsp;&nbsp;
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">video</a>
+   
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DT9BvDLE9bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div></p>
+
+
+
+
+
+		</li>
+			<br><br>
+				<li><a id="link">Android-Login-Activity-Template:</a><br>
+			<p><a href="PDF/Android/android2.pdf"><button id="a4">Theory</button></a>
+		<!--	<a href="H:\webproject\videopython.html"><button id="a5">Video</button></a>-->
+		<!--<div id="bs-example">-->
+    <!-- Button HTML (to Trigger Modal) -->&nbsp;&nbsp;
+    <a href="#myModal1" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal1">video</a>
+    
+    <!-- Modal HTML -->
+    <div id="myModal1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/vsM-z9XhxNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+
+
+
+		</li>
+			<br><br>
+				<li><a id="link">Scroll-Activity-Template:</a><br>
+		<p>	<a href="PDF/Android/android3.pdf"><button id="a4">Theory</button></a>
+			
+
+			&nbsp;&nbsp;
+
+
+    <a href="#myModal2" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal2">video</a>
+   
+    <div id="myModal2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/KNhWXlV3KyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+
+
+		</li><br><br>
+			<li><a id="link">Tab-Activity-Template:</a><br>
+			<p><a href="PDF/Android/android4.pdf"><button id="a4">Theory</button></a>
+			
+&nbsp;&nbsp;
+
+    <a href="#myModal3" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal3">video</a>
+   
+    <div id="myModal3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZYQe40w-mZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+
+		</li><br><br>
+			<li><a id="link">Android-Virtual-Devices:</a><br>
+		<p>	<a href="PDF/Android/android5.pdf"><button id="a4">Theory</button></a>
+		&nbsp;&nbsp;
+
+    <a href="#myModal4" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal4">video</a>
+   
+    <div id="myModal4" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s4xC8DYVZzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+</p>
+
+
+
+
+		</li><br><br>
+			<li><a id="link">Overview-of-Android-Application:</a><br>
+		<p>	<a href="PDF/Android/android6.pdf"><button id="a4">Theory</button></a>
+		&nbsp;&nbsp;	
+    <a href="#myModal5" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal5">video</a>
+   
+    <div id="myModal5" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Let's Start Study</h4>
+                </div>
+                <div class="modal-body">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/WCKklL5xuPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+</p>
+		</li><br>
+			
+			</ul>
+		</div>
+	</div>
+</header>
+</body>
+</html>

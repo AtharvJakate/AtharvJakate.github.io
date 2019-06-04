@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LET'S START STUDY</title>
+	<link rel="stylesheet"  href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="contactform.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="flexslider.css">
+
+	<style type="text/css">
+	
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+
+
+
+		.header_menu{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border:;
+		position:fixed; ;
+		background-color:black;
+		opacity: 0.7;
+
+	}
+
+	.logo{
+		width: %;
+		text-align:center ;
+	}
+
+	.logo h1 blink{
+		animation: blinker 2.5s linear infinite;
+		color:#fff;
+	}
+	@keyframes blinker{
+		50%{opacity: 0;}
+	}
+
+	.logo h1{
+		margin-top: -40px;
+		height:10px;
+		text-transform: uppercase;
+		padding-left: 50px;
+		color: white;
+	}
+
+	.menu_list{
+		width: 80%;
+		text-align: right;
+		padding-right: 190px;
+
+	}
+
+	.menu_list li{
+		display: inline-block;
+		text-transform: uppercase;
+		list-style: none;
+		letter-spacing: 2px;
+		padding-left: 20px;
+	}
+
+	.menu_list li a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.menu_list li a:hover{
+		color: #FFD34E;
+	}
+
+
+			.slider{
+			width: 100%;
+			height: 700px;
+			margin: 0px auto;
+			border-radius: 5px solide gold;
+			box-shadow: 0px 0px 20px 5px gray;
+			overflow: hidden;
+		}
+		.slider figure img{
+			width: 50%;
+			height: 700px;
+			float: left;
+
+		}
+		.slider figure{
+			position: relative;
+			width: 200%;
+			margin: 0px;
+			left: 0px;
+
+			animation: rk 5s infinite linear;
+		}
+
+
+		@keyframes rk{
+			0%{left:0%;}
+			40%{left:0%;}
+			
+			 
+			50%{left:-100%;}
+			
+			
+			90%{left:-100%;}
+			
+			100%{left:-100%;}
+		}
+
+
+		.thout{
+		width: 80%;
+		height:130px;
+		border: 5px solid #FFD34E;
+		background-color:;
+		text-align: center;
+		margin-left: 150px;
+
+	}
+	.thout h2{
+		padding-top: 50px;
+	}
+
+	.feature{
+		height: 750px;
+		background-color:#21618C;
+		color: #fff;
+		text-align:center;
+		font-size:30px;
+		padding: 45px; }
+		
+			
+	.feature1 h4{
+		margin: 50px;}
+		
+
+		
+	
+	.feature2 h4{
+		margin: 50px;
+		
+	}
+	.feature3 h4{
+		margin: 50px;
+		
+	}
+	section{
+		width: 90%;
+		height: 250px;
+		background-color:#21618C;
+		margin-left:70px;
+		display: flex;
+		justify-content:space-around;
+
+
+
+	}	
+	section div{
+		width:20%;
+		padding: 20px;
+		border:2px solid #FFD34E;
+		border-radius: 150px;
+		margin: 20px;
+		cursor: pointer;
+  box-shadow: inset 0 0 0 0 #FFD34E;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+		
+
+	} 
+	section div:hover {
+  box-shadow: inset 0 210px 0 0 #FFD34E;
+}
+
+	.feature1{flex: 1;
+	}
+	.feature2{flex: 1;
+}
+	.feature3{flex: 1;
+	}
+
+		.container1{
+			width: 0%;
+			padding-top: 100px;
+			background:black;
+			margin: 100px auto;
+			display: flex;
+			justify-content: center;
+			margin-top:10px;
+			
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		.box{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+
+			margin: 0px 10px;
+			transition: 1s;
+			
+			}
+		.box h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box:hover{
+		
+			transform: scale(1.3);
+			background-image:url(html1.png);
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box:hover h4{
+			display: none;
+			}
+		
+
+		.box1{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			
+			}
+		.box1 h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box1:hover{
+			transform: scale(1.3);
+			background-image:url(css.png);
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box1:hover h4{
+			display: none;
+			}
+		
+
+		.box2{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			}
+		.box2 h3 {
+			font-size: 33px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box2:hover{
+			transform: scale(1.3);
+			background-image:url(js.png);
+			background-size:cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			background-color:#fff;
+			}
+		.box2:hover h3{
+			display: none;
+			}
+		
+			
+		.box3{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			}
+		.box3 h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box3:hover{
+			transform: scale(1.3);
+			background-image:url(python.png);
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box3:hover h4{
+			display: none;
+			}
+		
+			
+		.box4{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			}
+		.box4 h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box4:hover{
+			transform: scale(1.3);
+			background-image:url("android.jpg");
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box4:hover h4{
+			display: none;
+			}
+			
+		.topic{
+			background-image: url("topic2.jpg");
+			background-size: cover;
+			height: 750px;
+		}
+		.topic h1{
+
+			font-size: 50px;
+			text-align: center;
+			color: #fff;
+
+		}
+
+		.contact{
+		width: 100%;
+		height: 500px;
+		background-color:gray;
+		margin-top: 100px;
+		color: #fff;
+
+	}
+	.contact img{
+		padding-left: 50px;
+		padding-top: 40px;
+	}
+	.contact address{
+		padding-left: 50px;
+		font-size: 20px;
+	}
+
+
+
+ 	.footer{
+		width:;
+		height: 90px;
+		text-align: center;
+		border:1px solid black;
+		background-color:black;
+
+	}
+	.footer h4{
+		padding-top: 30px;
+		color: white;
+		font-size: 20px;
+	}
+
+	.social ul{
+		list-style: none;
+	}
+	.social ul li{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-right: 15px;
+		box-shadow: ;
+		border-radius: 50px;
+		position:;
+	}
+
+	.social ul li a{
+		color: cyan;
+		font-size: 34px;
+		position: ;
+		top: 50px;
+		left: 50px;
+		transform: translate(-50% -50%);
+	}
+	.social{
+		margin-left: 1200px;
+	}
+
+	 .social a:hover{
+	 	color:white;
+	 }
+
+.inform{
+	background-color:grey;
+	
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+}
+.inform h1{
+	color: #fff;
+	letter-spacing:10px;
+	text-align:center;
+}
+.inform_form{
+	width: 100%;
+	margin: 0 auto;
+	text-align : center;
+}
+.form-left{
+	padding-left: 0;
+}
+.inform input[type="text"], input[type="email"], input[type="phone"]{
+	width:100%;
+	color: #fff;
+	background: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0.8em 1em;
+	margin-bottom: 2em;
+	border: none;
+	border-bottom: solid 2px #fff;
+	display: inline-block;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.inform textarea{
+	resize: none;
+	width:100%;
+	color: #fff;
+	background: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0.8em 1em;
+	min-height: 10em;
+	border: none;
+	border-bottom: solid 2px #fff;
+	display: inlin-block;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.inform input[type="submit"]{
+	outline:none;
+	color: #fff;
+	padding: 0.7em 1em;
+	font-size: 14px;
+	margin: 1em 0 0 0;
+	border: 1px solid #fff;
+	background: #ff4f81;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.inform input[type="submit"]:hover{
+		background:none;
+		color: #fff;
+		border: 1px solid #fff;
+}
+.inform input[type="text"]:hover, .inform input[type="text"]:focus, .inform input[type="email"]:hover, .inform input[type="email"]:focus, .inform textarea:hover, .inform textarea:focus, .inform input[type="phone"]:hover, .inform input[type="phone"]:focus{
+	border-color: #ff4f81;
+	
+}	
+.map{
+	border-radius: 2px solid #000;
+	background: #666;
+	padding: 1em;
+}
+.map iframe{
+	width: 100%;
+	height: 400px;
+	border: none;
+}
+footer{
+	background-color: #000;
+}
+.three_clo{
+	color: #fff;
+	padding: 10px;
+	margin-left: -40px; 
+	margin-top: 40px;
+}
+.three_clo h4{
+	letter-spacing: 2px;
+	color: #ff4f18;
+}
+.three_clo p{
+	text-align: left;
+}
+.three_clo input[type="email"]{
+	width: 84%;
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #ff4f81;
+	outline:none;
+	padding: 0.5em;
+	font-size: 13px;
+	color: #999999;
+}
+.btn1{
+	color: #dec6be;
+	font-size: 18px;
+	border: 1px solid #ff4f81;
+	width: 14%;
+	height: 38px;
+	text-decoration: none;
+	background-color: #ff4f81;
+}
+.mid-row{
+	border: 4px solid #ff4f81;
+	color: #000;
+	padding: 35px;
+	text-align: center;
+	background: #fff;
+	margin-top: 10px;
+}
+.mid-row h4{
+	font-size: 30px;
+	color: #ff4f81;
+	letter-spacing: 2px;
+}
+
+
+.contact p{
+	text-align: left;
+}
+.contact i{
+	color: #ff4f81;
+	padding-right: 20px;
+}
+.number{
+	color: #ff4f81;
+}
+.number	a{
+	color: #ff4f81;
+}
+
+
+    .social-icon ul{
+		list-style: none;
+
+	}
+	.social-icon ul li{
+		display: inline-block;
+		width: 50px;
+		height: px;
+		margin-right: 10px;	
+	}
+	.social-icon ul li a{
+		font-size: 20px;		
+	}
+	.social-icon{
+		margin-right:20px;
+	}
+	.social-icon i:hover{
+		color: white;
+	}
+
+	.phone{
+			margin-left: 27px;
+		}
+
+
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  background: url('scroll5.jpg') no-repeat 0px 0px;
+  height:50px;
+  width:50px;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+		
+		
+		
+		
+		
+		
+		
+	@media only screen and (max-width: 360px){
+
+
+
+			.slider{
+			width: 1350px;
+			height: 600px;
+			margin: 0px auto;
+			border-radius: 5px solide gold;
+			box-shadow: 0px 0px 20px 5px gray;
+			overflow: hidden;
+		}
+		.slider figure img{
+			width: 50%;
+			height: 600px;
+			float: left;
+
+		}
+		.slider figure{
+			position: relative;
+			width: 200%;
+			margin: 0px;
+			left: 0px;
+
+			animation: rk 5s infinite linear;
+		}
+
+
+
+		.thout{
+		width: 1000px;
+		height:130px;
+		border: 5px solid #FFD34E;
+		background-color:;
+		text-align: center;
+		margin-left: 150px;
+
+	}
+	.thout h2{
+		padding-top: 50px;
+	}
+
+
+
+
+	.feature{
+		width:1350px;
+		height: 750px;
+		background-color:#21618C;
+		color: #fff;
+		text-align:center;
+		font-size:30px;
+		padding: 45px; }
+		
+			
+	.feature1 h4{
+		margin: 50px;}
+		
+
+		
+	
+	.feature2 h4{
+		margin: 50px;
+		
+	}
+	.feature3 h4{
+		margin: 50px;
+		
+	}
+	section{
+		width: 90%;
+		height: 250px;
+		background-color:#21618C;
+		margin-left:70px;
+		display: flex;
+		justify-content:space-around;
+
+
+
+	}	
+	section div{
+		width:20%;
+		padding: 20px;
+		border:2px solid #FFD34E;
+		border-radius: 150px;
+		margin: 20px;
+		
+	} 
+
+	.feature1{flex: 1;
+	}
+	.feature2{flex: 1;
+}
+	.feature3{flex: 1;
+	}
+
+		.container1{
+			width: 0%;
+			padding-top: 100px;
+			background:black;
+			margin: 100px auto;
+			display: flex;
+			justify-content: center;
+			margin-top:10px;
+			
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+
+
+
+		.box{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			padding-left: : 100px;
+			
+			}
+		.box h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box:hover{
+			transform: scale(1.3);
+			background-image:url(html1.png);
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box:hover h4{
+			display: none;
+			}
+		
+
+		.box1{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			
+			}
+		.box1 h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box1:hover{
+			transform: scale(1.3);
+			background-image:url(css.png);
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box1:hover h4{
+			display: none;
+			}
+		
+
+		.box2{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			}
+		.box2 h3 {
+			font-size: 33px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box2:hover{
+			transform: scale(1.3);
+			background-image:url(js.png);
+			background-size:cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			background-color:#fff;
+			}
+		.box2:hover h3{
+			display: none;
+			}
+		
+			
+		.box3{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			}
+		.box3 h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box3:hover{
+			transform: scale(1.3);
+			background-image:url(python.png);
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box3:hover h4{
+			display: none;
+			}
+		
+			
+		.box4{
+			width: 250px;
+			height: 300px;
+			background-color:#FFD34E;
+			margin: 0px 10px;
+			transition: 1s;
+			}
+		.box4 h4 {
+			font-size: 40px;
+			text-align: center;
+			padding: 40px;
+			margin: 20px;
+			padding-top: 110px;
+			}
+		.box4:hover{
+			transform: scale(1.3);
+			background-image:url("android.jpg");
+			background-size: cover; 
+			box-shadow: 2px 2px 2px #800;
+			z-index: 2; 
+			}
+		.box4:hover h4{
+			display: none;
+			}
+			
+		.topic{
+			background-image: url("topic2.jpg");
+			background-size: cover;
+			height: 750px;
+			width:1350px;
+		}
+		.topic h1{
+
+			font-size: 50px;
+			text-align: center;
+			color: #fff;
+
+		}
+
+
+
+
+
+			.contact{
+		width: 100%;
+		height: 500px;
+		background-color:gray;
+		margin-top: 100px;
+		color: #fff;
+
+	}
+	.contact img{
+		padding-left: 50px;
+		padding-top: 40px;
+	}
+	.contact address{
+		padding-left: 50px;
+		font-size: 20px;
+	}
+
+
+
+ 	.footer{
+		width:;
+		height: 90px;
+		text-align: center;
+		border:1px solid black;
+		background-color:black;
+
+	}
+	.footer h4{
+		padding-top: 30px;
+		color: white;
+		font-size: 20px;
+	}
+
+	.social ul{
+		list-style: none;
+	}
+	.social ul li{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-right: 15px;
+		box-shadow: ;
+		border-radius: 50px;
+		position:;
+	}
+
+	.social ul li a{
+		color: cyan;
+		font-size: 34px;
+		position: ;
+		top: 50px;
+		left: 50px;
+		transform: translate(-50% -50%);
+	}
+	.social{
+		margin-left: 1200px;
+	}
+
+	 .social a:hover{
+	 	color:white;
+	 }
+
+.inform{
+	background:url('image6.jpg') 0px 0px fixed;
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+	width:1350px;
+}
+.inform h1{
+	color: #fff;
+	letter-spacing:10px;
+	text-align:center;
+}
+.inform_form{
+	width: 100%;
+	margin: 0 auto;
+	text-align : center;
+}
+.form-left{
+	padding-left: 0;
+}
+.inform input[type="text"], input[type="email"], input[type="phone"]{
+	width:100%;
+	color: #fff;
+	background: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0.8em 1em;
+	margin-bottom: 2em;
+	border: none;
+	border-bottom: solid 2px #fff;
+	display: inline-block;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.inform textarea{
+	resize: none;
+	width:100%;
+	color: #fff;
+	background: none;
+	outline: none;
+	font-size: 1em;
+	padding: 0.8em 1em;
+	min-height: 10em;
+	border: none;
+	border-bottom: solid 2px #fff;
+	display: inlin-block;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.inform input[type="submit"]{
+	outline:none;
+	color: #fff;
+	padding: 0.7em 1em;
+	font-size: 14px;
+	margin: 1em 0 0 0;
+	border: 1px solid #fff;
+	background: #ff4f81;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.inform input[type="submit"]:hover{
+		background:none;
+		color: #fff;
+		border: 1px solid #fff;
+}
+.inform input[type="text"]:hover, .inform input[type="text"]:focus, .inform input[type="email"]:hover, .inform input[type="email"]:focus, .inform textarea:hover, .inform textarea:focus, .inform input[type="phone"]:hover, .inform input[type="phone"]:focus{
+	border-color: #ff4f81;
+	
+}	
+
+
+.map{
+	border-radius: 2px solid #000;
+	background: #666;
+	padding: 1em;
+}
+.map iframe{
+	width: 100%;
+	height: 400px;
+	border: none;
+}
+footer{
+	background-color: #000;
+}
+.three_clo{
+	color: #fff;
+	padding: 0px;
+	margin-left: 0px; 
+	margin-top: 40px;
+	padding-left: 0px;
+}
+.three_clo h4{
+	letter-spacing: 2px;
+	color: #ff4f18;
+}
+.three_clo p{
+	text-align: left;
+}
+.three_clo input[type="email"]{
+	width: 84%;
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #ff4f81;
+	outline:none;
+	padding: 0.5em;
+	font-size: 13px;
+	color: #999999;
+}
+.btn1{
+	color: #dec6be;
+	font-size: 18px;
+	border: 1px solid #ff4f81;
+	width: 14%;
+	height: 38px;
+	text-decoration: none;
+	background-color: #ff4f81;
+}
+.mid-row{
+	border: 4px solid #ff4f81;
+	color: #000;
+	padding: 35px;
+	text-align: center;
+	background: #fff;
+	margin-top: 10px;
+}
+.mid-row h4{
+	font-size: 30px;
+	color: #ff4f81;
+	letter-spacing: 2px;
+}
+
+
+.contact p{
+	text-align: left;
+}
+.contact i{
+	color: #ff4f81;
+	padding-right: 20px;
+}
+.number{
+	color: #ff4f81;
+}
+.number	a{
+	color: #ff4f81;
+}
+
+
+    .social-icon ul{
+		list-style: none;
+
+	}
+	.social-icon ul li{
+		display: inline-block;
+		width: 50px;
+		height: px;
+		margin-right: 10px;	
+	}
+	.social-icon ul li a{
+		font-size: 20px;		
+	}
+	.social-icon{
+		margin-right:20px;
+	}
+	.social-icon i:hover{
+		color: #000;
+	}
+
+	.phone{
+			margin-left: 0px;
+		}
+
+
+
+
+
+} 
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+	 
+	
+	</style>
+</head>
+<body>
+
+	<div class="slider">
+	<figure>
+		<img src="port07.jpg">
+		<img src="photo.jpg">
+	</figure>
+
+	<div class="header_menu">
+		<div class="logo">
+			<h1><blink>LET'S START STUDY</blink></h1>
+		</div>
+
+		<div class="menu_list">
+			<ul>
+				<li><a href=""><font color="#FFD34E">home</font></a></li>
+				<li><a href="#2">feature</a></li>
+				<li><a href="#3">topic</a></li>
+				<li><a href="#4">contact</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	
+</div>
+
+<br><br>
+
+	<div class="thout">
+			<h2>“Everything is designed. Few things are designed well.” -Brian Reed</h3>
+		</div>
+
+<br><br>
+		
+		<div class="feature" id="2"><h1>Features</h1>
+			<br>
+		 	<br>
+		  <section>
+
+
+		
+		<div class="feature1"><h4>Unlimited Access</h4></div>
+		<div class="feature2"><h4>Learn Anywhere</h4></div>
+		<div class="feature3"><h4>Easy To learn & Design</h4></div>
+
+		</section>
+		<br>
+
+		<section>
+		
+		<div class="feature1"><h4>Versatility At its Best</h4></div>
+		<div class="feature2"><h4>Flexible Learning Options</h4></div>
+		<div class="feature3"><h4>Efficient Content Distribution</h4></div>
+
+		</section>
+		
+		
+
+	</div>
+		
+
+
+
+		
+		<div class="topic" id="3">
+			<br><br>
+			<h1>Topic</h1>
+
+	      <div class="container1">
+		
+		
+		<a href="HTML.html"><div class="box"><h4>HTML</h4></div></a>
+		<a href="CSS.html"><div class="box1"><h4>CSS</h4></div></a>
+		<a href="js.html"><div class="box2"><h3>JavaScript</h3></div></a>
+		<a href="python.html"><div class="box3"><h4>Python</h4></div></a>
+		<a href="and.html"><div class="box4"><h4>Android</h4></div></a>
+		
+
+	</div>
+	</div>
+		
+
+<!--<div class="contact" id="4">
+	
+	<img src="contact.jpg">
+	<br>
+	<br>
+	<br>
+	<address>
+				<font color="#22ECEA">Daily Needs Trade Center</font>				 <p>S.No. 30/1/6,</p>
+				  <p>Plot No. 3,</p>
+				   <p>Balajinagar, Pune,</p>
+				    <p>Maharashtra 411043</p>
+
+			</address>
+
+			
+	
+</div>-->
+
+<div class="inform" id="4">
+
+	<!--<div class="container">
+			<h1>Contact Us</h1>
+			<div class="inform_form">
+				<form action="#" method="post">
+					<div class="row">
+						<div class="col-sm-4 col-md-4 form-left">
+							<input type="text" name="name" placeholder="Name" required="">
+						</div>
+						<div class="col-sm-4 col-md-4 form-left">
+							<input type="email" name="email" placeholder="Email" required="">
+						</div>
+						<div class="col-sm-4 col-md-4 form-left">
+							<input type="phone" name="phone" placeholder="Phone" required="">
+						</div>
+					</div>
+					<textarea name="message" placeholder="message" required=""></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+	</div>
+</div>-->
+<div class="map">
+	<div><h1>Contact Us</h1></div><br>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.37902616198!2d73.85550931465448!3d18.466482987440546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eab9621f0c5f%3A0x51d6070913408623!2sTrueVisitor!5e0!3m2!1sen!2sin!4v1558179942764!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<footer>
+	<div class=	"container">
+		<div class="row">
+
+	
+			<div class="col-md-4 three_clo">
+				<address>
+					<h3>Get in touch</h3>
+				<font color="#ff4f81">Daily Needs Trade Center</font><br>			   S.No. 30/1/6,
+				   Plot No. 3,<br>
+				   Balajinagar, Pune,<br>
+				   Maharashtra 411043
+
+			</address>
+
+	
+			</div>
+
+
+			<div class="col-md-4 mid-row">
+			<h4>Follow Us</h4>
+			<p>Follow us to get the updated Changes.</p>
+
+
+				<div class="social-icon">
+		<ul>
+			<li><a href="https://www.facebook.com/truevisitorapp/"><font color="blue"><i class="ion-social-facebook"></i></font></a></li>
+			<li><a href="https://twitter.com/true_visitor"><i class="ion-social-twitter"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCRODOPjAqnfecf3QPmuDA0w"><font color="red"><i class="ion-social-youtube"></i></font></a></li>
+			<li><a href="https://www.instagram.com/truevisitor/"><font color="#F43468"><i class="ion-social-instagram"></i></font></a></li>
+		</ul>
+	</div>
+
+			
+			</div>
+			<div >
+				<br><br>
+				<div class="phone">
+					<address>
+						<h4><font color="#fff"><font color="#ff4f81"> Phone :</font>123456789</font></h4><br>
+						<h4><font color="#fff"><font color="#ff4f81"> Mail :</font>tushar@true-visitor.com 
+						</font></h4>
+					</address>
+					
+				</div>
+				
+			</div>
+	</div>
+</div>
+
+</footer>
+
+
+
+<div class="footer">
+		<h4> © 2019...Copyright <font color="#FFD34E">DNOS Solutions</font></h4>
+			<div class="social-icon">
+		<ul>
+			<li><a href="https://www.facebook.com/truevisitorapp/"><font color="blue"><i class="ion-social-facebook"></i></font></a></li>
+			<li><a href="https://twitter.com/true_visitor"><i class="ion-social-twitter"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCRODOPjAqnfecf3QPmuDA0w"><font color="red"><i class="ion-social-youtube"></i></font></a></li>
+			<li><a href="https://www.instagram.com/truevisitor/"><font color="#F43468"><i class="ion-social-instagram"></i></font></a></li>
+		</ul>
+		<br>
+	</div>
+
+</div>
+
+<blink><button onclick="topFunction()" id="myBtn" title="Go to top"></button></blink>
+<script type="text/javascript">
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="bootstrap.js"></script>
+
+
+	
+	
+
+
+
+
+</body>
+</html>
